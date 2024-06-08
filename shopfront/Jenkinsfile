@@ -41,7 +41,7 @@ pipeline {
                         sh '''
                         ssh -i "Java key.pem" ubuntu@ec2-18-206-192-146.compute-1.amazonaws.com << 'EOF'
                         minikube kubectl -- apply -f shopfront-service.yaml
-                        EOF
+                        'EOF'
                         '''
                     }
                 }
